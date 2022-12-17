@@ -2,22 +2,40 @@
     margin-bottom: 20px;
     text-align: center;
 
-    font-size: 42px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.16;
+    }
 }
 
 .favorites-text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-align: center;
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.18;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.18;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
 }
 
 .favorites-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+    }
 }
 
 .fav-img-wrap {
@@ -25,10 +43,39 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    width: 280px;
+    height: 280px;
 
-    width: 395px;
-    height: 397px;
+    border: 11px solid #FFE550;
 
-    border: 16px solid #FFE550;
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        height: 338px;
+
+        border: 14px solid #FFE550;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 395px;
+        height: 397px;
+
+        border: 16px solid #FFE550;
+    }
+    
     border-radius: 50%;
+}
+
+.fav-img {
+    width: 224px;
+    height: 224px;
+    
+    @media screen and (min-width: 768px) {
+        width: 268px;
+        height: 268px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 315px;
+        height: 315px;
+    }
 }
